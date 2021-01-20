@@ -61,7 +61,7 @@ You can (and should) make the simplifying assumption that a client will have
 only one outstanding request at a time. (In practice, many distributed systems
 allow the client to issue multiple simultaneous requests; the bookkeeping for
 that is a bit more involved.) Also, recall that the timer interrupt handler will
-fire iff you explicitly set a timer.
+fire if you explicitly set a timer.
 
 The client interface includes both a polling and a blocking interface.
 `hasResult` should return whether the client has a result for the most recent
