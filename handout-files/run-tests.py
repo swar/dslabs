@@ -99,7 +99,7 @@ def run_tests(lab, part=None, no_run=False, no_search=False,
 
     test_file = os.path.join('out/tst', *test_suite.split('.')) + '.class'
     if not os.path.isfile(test_file):
-        print("Count not find test file %s" % test_file)
+        print("Could not find test file %s" % test_file)
         return
 
     command.append(test_suite)
